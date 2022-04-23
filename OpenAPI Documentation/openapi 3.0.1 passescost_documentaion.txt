@@ -1,0 +1,194 @@
+openapi: 3.0.1
+info:
+  title: passescost
+  description: Return the money that operator2 ows to operator1
+  version: '0.1'
+servers:
+  - url: http://127.0.0.1:5000
+paths:
+  /passescost/olympia_odos/kentriki_odos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_1ID
+          in: header
+          schema:
+            type: string
+          example: olympia_odos
+        - name: op_2ID
+          in: header
+          schema:
+            type: string
+          example: kentrikis_odos
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  RequestTimestamp:
+                    type: string
+                  PeriodTo:
+                    type: string
+                  NumberOfPasses:
+                    type: integer
+                  op_1ID:
+                    type: string
+                  PassesCost:
+                    type: number
+                  PeriodFrom:
+                    type: string
+                  op_2ID:
+                    type: string
+              examples:
+                '0':
+                  value: |
+                    {
+                      "NumberOfPasses": 72, 
+                      "PassesCost": 149.79999999999998, 
+                      "PeriodFrom": "20200101", 
+                      "PeriodTo": "20210101", 
+                      "RequestTimestamp": "Fri, 25 Feb 2022 16:55:14 GMT", 
+                      "op_1ID": "olympia_odos", 
+                      "op_2ID": "kentriki_odos"
+                    }
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /passescost/moreas/aodos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_1ID
+          in: header
+          schema:
+            type: string
+          example: moreas
+        - name: op_2ID
+          in: header
+          schema:
+            type: string
+          example: aodos
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  RequestTimestamp:
+                    type: string
+                  PeriodTo:
+                    type: string
+                  NumberOfPasses:
+                    type: integer
+                  op_1ID:
+                    type: string
+                  PassesCost:
+                    type: number
+                  PeriodFrom:
+                    type: string
+                  op_2ID:
+                    type: string
+              examples:
+                '0':
+                  value: |
+                    {
+                      "NumberOfPasses": 41, 
+                      "PassesCost": 80.55000000000001, 
+                      "PeriodFrom": "20200101", 
+                      "PeriodTo": "20210101", 
+                      "RequestTimestamp": "Fri, 25 Feb 2022 16:53:50 GMT", 
+                      "op_1ID": "moreas", 
+                      "op_2ID": "aodos"
+                    }
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /passescost/aodos/nea_odos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_1ID
+          in: header
+          schema:
+            type: string
+          example: aodos
+        - name: op_2ID
+          in: header
+          schema:
+            type: string
+          example: nea_odos
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  RequestTimestamp:
+                    type: string
+                  PeriodTo:
+                    type: string
+                  NumberOfPasses:
+                    type: integer
+                  op_1ID:
+                    type: string
+                  PassesCost:
+                    type: number
+                  PeriodFrom:
+                    type: string
+                  op_2ID:
+                    type: string
+              examples:
+                '0':
+                  value: |
+                    {
+                      "NumberOfPasses": 91, 
+                      "PassesCost": 254.80000000000044, 
+                      "PeriodFrom": "20200101", 
+                      "PeriodTo": "20210101", 
+                      "RequestTimestamp": "Fri, 25 Feb 2022 16:54:26 GMT", 
+                      "op_1ID": "aodos", 
+                      "op_2ID": "nea_odos"
+                    }
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000

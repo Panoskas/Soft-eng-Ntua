@@ -1,0 +1,190 @@
+openapi: 3.0.1
+info:
+  title: Charges_by
+  description: How much mone
+  version: '0.1'y each of other companies ows you
+servers:
+  - url: http://127.0.0.1:5000
+paths:
+  /chargesby/aodos/20200105/20210105:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: dateto
+          in: header
+          schema:
+            type: string
+          example: '20210105'
+        - name: op_ID
+          in: header
+          schema:
+            type: string
+          example: aodos
+        - name: datefrom
+          in: header
+          schema:
+            type: string
+          example: '20200105'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  RequestTimestamp:
+                    type: string
+                  PROList:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        VisitingOperator:
+                          type: string
+                        NumberOfPasses:
+                          type: integer
+                        PassesCost:
+                          type: number
+                  op_ID:
+                    type: string
+                  PeriodTo:
+                    type: string
+                  PeriodFrom:
+                    type: string
+              examples:
+                '0':
+                  value: |
+                    {
+                      "PROList": [
+                        {
+                          "NumberOfPasses": 100, 
+                          "PassesCost": 280.0000000000005, 
+                          "VisitingOperator": "egnatia"
+                        }, 
+                        {
+                          "NumberOfPasses": 120, 
+                          "PassesCost": 336.00000000000074, 
+                          "VisitingOperator": "gefyra"
+                        }, 
+                        {
+                          "NumberOfPasses": 108, 
+                          "PassesCost": 302.4000000000006, 
+                          "VisitingOperator": "kentriki_odos"
+                        }, 
+                        {
+                          "NumberOfPasses": 91, 
+                          "PassesCost": 254.80000000000044, 
+                          "VisitingOperator": "moreas"
+                        }, 
+                        {
+                          "NumberOfPasses": 87, 
+                          "PassesCost": 243.6000000000004, 
+                          "VisitingOperator": "nea_odos"
+                        }, 
+                        {
+                          "NumberOfPasses": 101, 
+                          "PassesCost": 282.8000000000005, 
+                          "VisitingOperator": "olympia_odos"
+                        }
+                      ], 
+                      "PeriodFrom": "20200105", 
+                      "PeriodTo": "20210105", 
+                      "RequestTimestamp": "Fri, 25 Feb 2022 16:46:49 GMT", 
+                      "op_ID": "aodos"
+                    }
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /chargesby/olympia_odos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: dateto
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_ID
+          in: header
+          schema:
+            type: string
+          example: olympia_odos
+        - name: datefrom
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  RequestTimestamp:
+                    type: string
+                  PROList:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        VisitingOperator:
+                          type: string
+                        NumberOfPasses:
+                          type: integer
+                        PassesCost:
+                          type: number
+                  op_ID:
+                    type: string
+                  PeriodTo:
+                    type: string
+                  PeriodFrom:
+                    type: string
+              examples:
+                '0':
+                  value: |
+                    {
+                      "PROList": [
+                        {
+                          "NumberOfPasses": 61, 
+                          "PassesCost": 118.09999999999998, 
+                          "VisitingOperator": "aodos"
+                        }, 
+                        {
+                          "NumberOfPasses": 66, 
+                          "PassesCost": 126.8, 
+                          "VisitingOperator": "egnatia"
+                        }, 
+                        {
+                          "NumberOfPasses": 74, 
+                          "PassesCost": 150.10000000000005, 
+                          "VisitingOperator": "gefyra"
+                        }, 
+                        {
+                          "NumberOfPasses": 72, 
+                          "PassesCost": 149.79999999999998, 
+                          "VisitingOperator": "kentriki_odos"
+                        }, 
+                        {
+                          "NumberOfPasses": 57, 
+                          "PassesCost": 118.39999999999998, 
+                          "VisitingOperator": "moreas"
+                        }, 
+                        {
+                          "NumberOfPasses": 58, 
+                          "PassesCost": 114.10000000000001, 
+                          "VisitingOperator": "nea_odos"
+                        }
+                      ], 
+                      "PeriodFrom": "20200101", 
+                      "PeriodTo": "20210101", 
+                      "RequestTimestamp": "Fri, 25 Feb 2022 16:46:11 GMT", 
+                      "op_ID": "olympia_odos"
+                    }
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000

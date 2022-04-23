@@ -1,0 +1,106 @@
+html{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(#2887a1, #515bcc); 
+}
+
+body{
+  background-image: linear-gradient(#2887a1, #515bcc); 
+  width: 100vw;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  
+}
+
+@media (max-width:700px) {
+  .App-logo {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(30px + 2vmin);
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+@media (max-width:700px) {
+  .App-header {
+    background-color: #282c34;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(22px + 2vmin);
+    color: white;
+    border-bottom: 1px solid white;
+  }
+}
+
+.App-body {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+.Bank-body {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.nav-tabs .nav-link, .nav-tabs .nav-link.active {
+  margin-top: 10px;
+  color: #282c34;
+  background-color: white;
+  border-color: none;
+
+}
+
+
+.nav-tabs .nav-link {
+  color: white;
+  background-color: #282c34;
+  border-color: none;
+}
+
+
+.nav-tabs {
+  border-bottom: 1px solid white;
+}
+
+.nav-tabs .nav-link:hover{
+  border: 1px solid white;
+}

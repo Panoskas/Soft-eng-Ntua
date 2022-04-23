@@ -1,0 +1,86 @@
+openapi: 3.0.1
+info:
+  title: passesperstation
+  description: Return all the passes that happened from that station in specific dates
+  version: '0.1'
+servers:
+  - url: http://127.0.0.1:5000
+paths:
+  /passesperstation/KO00/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: stationID
+          in: header
+          schema:
+            type: string
+          example: KO00
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /passesperstation/EG05/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: stationID
+          in: header
+          schema:
+            type: string
+          example: EG05
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /passesperstation/AO01/20200105/20210105:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210105'
+        - name: stationID
+          in: header
+          schema:
+            type: string
+          example: AO01
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200105'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000

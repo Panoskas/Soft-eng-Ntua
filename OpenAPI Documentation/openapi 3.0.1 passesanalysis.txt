@@ -1,0 +1,101 @@
+openapi: 3.0.1
+info:
+  title: passesanalysis
+  description: Determines how many vehicles belonging to Operator2 past from stations belongin to Operator1 
+  version: '0.1'
+servers:
+  - url: http://127.0.0.1:5000
+paths:
+  /passesanalysis/egnatia/kentriki_odos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_1ID
+          in: header
+          schema:
+            type: string
+          example: egnatia
+        - name: op_2ID
+          in: header
+          schema:
+            type: string
+          example: kentriki_odos
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /passesanalysis/moreas/nea_odos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_1ID
+          in: header
+          schema:
+            type: string
+          example: moreas
+        - name: op_2ID
+          in: header
+          schema:
+            type: string
+          example: nea_odos
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
+  /passesanalysis/moreas/aodos/20200101/20210101:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: date_to
+          in: header
+          schema:
+            type: string
+          example: '20210101'
+        - name: op_1ID
+          in: header
+          schema:
+            type: string
+          example: moreas
+        - name: op_2ID
+          in: header
+          schema:
+            type: string
+          example: aodos
+        - name: date_from
+          in: header
+          schema:
+            type: string
+          example: '20200101'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: http://127.0.0.1:5000
+    servers:
+      - url: http://127.0.0.1:5000
